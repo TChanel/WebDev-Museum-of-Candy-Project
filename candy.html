@@ -11,7 +11,7 @@
 </head>
 <body>
     
-    <nav id="mainNavbar" class="navbar navbar-dark navbar-expand-md py-0">
+    <nav id="mainNavbar" class="navbar navbar-dark navbar-expand-md py-0 fixed-top">
         <a href="" class="navbar-brand">CANDY</a>
         <button class="navbar-toggler" data-toggle="collapse" data-target="" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -32,7 +32,7 @@
         </div>
     </nav>
 <!--First Row-->
-    <section class="container-fluid px-0"></section>
+    <section class="container-fluid px-0 pr-0"></section>
     <div class="row align-items-center">
         <div class="col-lg-6">
             <div id="headingGroup" class="text-white text-center d-none d-lg-block">
@@ -51,17 +51,17 @@
     </div>
 <!--Second Row-->
 
-    <section class="container-fluid px-0">
-        <div class="row align-items-center">
+    <section class="container-fluid px-0 pr-0">
+        <div class="row align-items-center content">
             <div class="col-md-6 order-2 order-md-1">
                 <img src="milk.png" class="img-fluid" alt="">
             </div>
             <div id="secondGroup" class="col-md-6 text-center order-1 order-md-2"> 
                 <div class="row justify-content-center">
-                    <div class="col-10 col-lg-8 ">
-                        <h2>HISTORY OF CANDY</h2>
+                    <div class="col-10 col-lg-8 mb-5 mb-md-0">
+                        <h2>WHAT IS CANDY?</h2>
                         <img src="lolli.png" alt="" class="d-none d-lg-inline">  
-                        <p class="lead">The origin of candy can be traced to the ancient Egyptians who combining fruits and nuts with honey. Around the same time, Greeks used honey to make candied fruits and flowers. First modern candies were made in 16th century and sweet manufacturing developed rapidly into an industry during the early 19th century.</p>
+                        <p class="lead">In the United States, the term "candy" refers to a broad category of any confection made primarily of sugar and other sweet ingredients. The heat and duration of cooking and cooling sugar water and added sweeteners and flavors determine the type of candy. Chocolate is referred to as candy in America and often added to other compatible food ingredients like nuts, fruit, and seeds to form candy combinations. This rather general definition does not hold overseas. The term "candy" is almost never used in the United Kingdom and only lives on in the term "candy floss." In the U.K., the common term for a piece of confectionery is a "sweet." However, in Scotland, "candy" can refer to crystallized sugar. In Australian English, all confections are known as "lollies."</p>
                     </div>
                 </div>
             </div>
@@ -70,16 +70,58 @@
 
 <!--Third Row-->
 
+<section class="container-fluid px-0 pr-0">
+    <div class="row align-items-center content">
+        <div id="secondGroup" class="col-md-6 text-center"> 
+            <div class="row justify-content-center">
+                <div class="col-10 col-lg-8 mb-5 mb-md-0">
+                    <h2>HISTORY OF CANDY</h2>
+                    <img src="lolli.png" alt="" class="d-none d-lg-inline">  
+                    <p class="lead">The origin of candy can be traced to the ancient Egyptians who combining fruits and nuts with honey. Around the same time, Greeks used honey to make candied fruits and flowers. First modern candies were made in 16th century and sweet manufacturing developed rapidly into an industry during the early 19th century.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <img src="gumball.png" class="img-fluid" alt="">
+        </div>
+    </div>
+</section>
+
 <!--Fouth Row-->
-
-<!--Fifth Row-->
-
-
-
+<section class="container-fluid px-0 pr-0">
+    <div class="row align-items-center content">
+        <div class="col-md-6 order-2 order-md-1">
+            <img src="sprinkles.png" class="img-fluid" alt="">
+        </div>
+        <div id="secondGroup" class="col-md-6 text-center order-1 order-md-2"> 
+            <div class="row justify-content-center">
+                <div class="col-10 col-lg-8 mb-5 mb-md-0">
+                    <h2>HOW CANDY IS MADE</h2>
+                    <img src="lolli.png" alt="" class="d-none d-lg-inline">  
+                    <p class="lead">Sugar is an essential energy source for all living things. Natural sugar is found in almost everything we eat, even really healthy foods like vegetables and liver. Though sugar is sweet and full of energy, it is relatively empty in terms of nutritional value. It has no protein, fibers, vitamins, fatty acids, and very little minerals the body needs.
+                        Glucose (or "dextrose") is the basic form of sugar that is found in fruits and vegetables and even your blood.
+                        Fructose is a simple sugar found in plants, fruits and honey.
+                        Sucrose is white table sugar. It is made up of glucose and fructose and is found naturally in sugar cane and sugar beets. Early candy makers learned that sugar was better than honey in confection making due to the wider range of textures and appearances made possible by sucrose.
+                        Lactose and Maltose are other forms of sugar found in milk and grains, respectively.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+    <script>
+         $(function () {
+            $(document).scroll(function () {
+                var $nav = $("#mainNavbar");
+                $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
+            });
+        });
+    </script>
+
 </body>
 </html>
