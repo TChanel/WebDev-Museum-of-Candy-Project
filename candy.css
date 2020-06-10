@@ -24,11 +24,29 @@ body{
 #headingGroup h2{
     font-weight: 100;
     font-size: 4rem;
+    text-align: center;
+}
+
+#secondGroup h2{
+    font-weight: 50;
+    font-size: 3.5rem;
+    color: #ea1c2c;
+}
+#secondGroup p{
+    font-weight: 100;
+    font-size: 1.5rem;
+    color: ;
 }
 @media (max-width: 1325px){
     #headingGroup h2{
         font-weight: 100;
         font-size: 3rem;
+    }
+}
+@media (max-width: 1250px){
+    #headingGroup h2{
+        font-weight: 100;
+        font-size: 2rem;
     }
 }
 
